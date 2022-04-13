@@ -1,0 +1,274 @@
+
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Gelasio', serif;
+    text-align: center;
+    background-color:#eee;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   /* background-image: url("images/c.jpg");*/
+ 
+}
+
+
+input[type="email"],input[type="password"],input[type="text"],input[type="date"]{
+    outline: none;
+    padding: 20px;
+    display: block;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 20px auto;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color:#616161;
+  box-shadow: 0 0 0px 1000px  #E0E0E0 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+body a{
+    text-decoration: none;
+}
+
+
+input[type="submit"]{
+    padding: 10px;
+    color:#fff;
+    background: #424242;
+    width: 320px;
+    margin: 20px auto;
+    margin-top: 0;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    outline:none;
+}
+
+
+input[type="submit"]:hover{
+    background:#2e2e2e;
+
+}
+
+input[type="submit"]:active{
+    background:#212121;
+
+}
+
+header{
+    flex: 0 0 auto;
+    width:100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: block;
+    padding: 1px;
+    height:120px;
+
+}
+
+header img {
+    float: center;
+    text-decoration: none;
+    width: 130px; 
+    height: 130px;
+    
+}
+
+h1,p.subtext,footer{
+    color: #424242;
+
+}
+
+footer{
+    flex: 0 0 auto;
+    height:50px;
+    line-height:50px;
+    background:black;
+    color:white;
+    text-align:center;
+    width:100%;
+    margin-top:  15%;
+}
+
+
+
+p a{
+    font-weight: bold;
+    color: #424242;
+    text-decoration: none;
+}
+p a:hover{
+    color: #212121;
+    text-decoration: underline;
+}
+
+ 
+
+#logo_lobby{
+    float: center;
+    width: 130px; 
+    height: 130px;
+    margin-left: 285px;
+    
+}
+
+#logo_config,#logo_config img{
+    float: center;
+    text-decoration: none;
+    width: 40px; 
+    height: 40px;
+    
+}
+
+
+#logo_lobby_config{
+    float: center;
+    width: 130px; 
+    height: 130px;
+    margin-left: 360px;
+   
+}
+
+#logo_lobby_back{
+    float: center;
+    width: 60px; 
+    height: 60px;
+    margin-left: 170px;
+   
+}
+
+
+
+
+
+
+li{
+    float:left;
+    list-style: none;
+    text-decoration: none;
+    padding:20px;
+    margin: 20px;
+}
+
+.div1 button{
+   
+    list-style: none;
+    text-decoration: none;
+    padding:10px;
+    margin: 30px;
+
+}
+
+
+ nav{
+    float: right;
+    font-size: 20px;
+}
+
+
+nav ul a{
+    float: right;
+    font-weight: bold;
+    color: #424242;
+    line-height: normal;
+    font-size: 20px;
+}
+
+
+#lobby_logout:hover{
+    border-radius: 200px;
+    background: #424242;
+    color: #eee
+    
+}
+
+nav ul img:hover{
+    border-radius: 200px;
+    background: #ffffff;
+    
+}
+
+
+#t_client,#t_rental,#t_sanction,#t_cd{
+    display: none;
+    
+}
+
+#t_client,#t_rental,#t_sanction,#t_cd{
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 30px;
+    
+    
+}
+
+td,th{
+    padding:10px;
+}
+
+td{
+    padding: 5px;
+    
+    border-top: 1px solid rgb(184, 184, 184);
+ 
+}
+
+thead{
+
+    background-color: #424242; 
+    color: white;
+}
+
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: #424242;
+    color: white;
+}
+
+#div_client,#div_rental,#div_sanction,#div_cd{
+    margin: 20px;
+}
+
+h4 {
+
+color: #5f5f5f;
+
+}
+
+button{
+
+    padding: 10px;
+    color:#fff;
+    background: #5e5e5e;
+    width: 200px;
+    margin: 10px ;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background: #505050;
+    transition: 0.3s;
+}
+
