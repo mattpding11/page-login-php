@@ -2,9 +2,9 @@
 
    
 $host ='localhost';
-$username = 'root';
-$password = 'root';
-$database = "cd_db";
+$username = ''; # Nombre de usuario base de datos mysql
+$password = ''; # Contraseña de usuario
+$database = "DB";
 
     $conn = mysqli_connect($host,$username,$password,$database);
    
