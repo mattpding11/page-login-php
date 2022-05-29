@@ -15,11 +15,16 @@ if(!isset($username)){
     header('Location: index.php');
 }else{
 
-    $message = "<h4 align='center' > BIENVENIDO, $username </h4>";
-    $query_client = mysqli_query($conn,"SELECT * FROM CLIENT WHERE client_id = $pass");
-    $query_rental = mysqli_query($conn,"SELECT * FROM RENTAL WHERE fk_client_id = $pass");
-    $query_sanction = mysqli_query($conn,"SELECT * FROM SANCTION WHERE fk_client_id = $pass");
-    $query_cd = mysqli_query($conn,"SELECT * FROM CD WHERE cd_id = $pass");
+    $query_client_id = mysqli_query($conn, "SELECT client_id, client_name FROM CLIENT WHERE client_email = '$username'");
+    $row = mysqli_fetch_assoc($query_client_id);
+    $client_id = $row['client_id'];
+    // echo "<script type='text/javascript'>console.log(".$client_id.")</script>";
+
+    $message = "<h4 align='center' > BIENVENIDO, ".$row['client_name']."</h4>";
+    $query_client = mysqli_query($conn,"SELECT * FROM CLIENT WHERE client_id = $client_id");
+    $query_rental = mysqli_query($conn,"SELECT * FROM RENTAL WHERE fk_client_id = $client_id");
+    $query_sanction = mysqli_query($conn,"SELECT * FROM SANCTION WHERE fk_client_id = $client_id");
+    $query_cd = mysqli_query($conn,"SELECT * FROM CD WHERE cd_id = $client_id");
     /*
     $array_cd = mysqli_fetch_array($query_cd);
     $array_client = mysqli_fetch_array($query_client);
