@@ -1,6 +1,7 @@
 <?php 
 
-   
+ # Cambie el username y password conforme a sus credenciales de mysql
+
 $host ='localhost';
 $username = ''; # Nombre de usuario base de datos mysql
 $password = ''; # Contraseña de usuario
